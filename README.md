@@ -17,8 +17,16 @@ touch crud/__init__.py schema/__init__.py routers/__init__.py
 
 ## 実行
 
-```bash
-# 期の初期テーブル作成
-poetry run python init_db.py
+### fastAPIの起動
 
+```bash
+poetry run uvicorn main:app --reload
+```
+
+## DBセットアップ
+
+### 期の初期テーブル作成
+
+```bash
+poetry run python init_db.py
 ```
